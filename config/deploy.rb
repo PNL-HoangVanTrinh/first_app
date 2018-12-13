@@ -1,8 +1,10 @@
 # config valid only for current version of Capistrano
-lock "3.8.2"
+lock "3.11.0"
 
 set :application, "first_app"
 set :repo_url, "git@github.com:hoangvantrinhhv92/first_app.git"
+set :deploy_user, 'deploy'
+set :use_sudo, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -18,7 +20,7 @@ set :deploy_to, "/home/deploy/first_app"
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
