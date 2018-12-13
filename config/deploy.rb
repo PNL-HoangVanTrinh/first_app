@@ -3,14 +3,14 @@ lock "3.11.0"
 
 set :application, "first_app"
 set :repo_url, "git@github.com:hoangvantrinhhv92/first_app.git"
-set :deploy_user, 'deploy'
+set :deploy_user, 'ec2-user'
 set :use_sudo, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/first_app"
+set :deploy_to, "/u/apps/first_app"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
