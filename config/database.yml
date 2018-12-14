@@ -49,6 +49,10 @@ test:
 #
 production:
   <<: *default
-  database: first_app_production
-  username: first_app
-  password: <%= ENV['FIRST_APP_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  database: first_app
+  username: root
+  password: "1234qwer"
+  host: localhost
+  port: /var/run/mysqld/mysqld.sock
